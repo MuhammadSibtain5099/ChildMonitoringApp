@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@drawable/bg2">
+
+    <LinearLayout
+        android:id="@+id/mainButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custombutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="On-Way"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/btn1"
+            android:background="@drawable/custombutton"
+            android:text="Arrived" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btn2"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custombutton"
+            android:text="All "/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/mainButtons">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_height="match_parent"
+            android:text="Add/Edit Parent"
+            android:background="@drawable/custombutton"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+<!--         />-->
+
+
+<!--        <fragment-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:name="com.example.childmonitoring.Fragment2"-->
+<!--            ></fragment>-->
+
+<!--        <fragment-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:name="com.example.childmonitoring.Fragment3"-->
+<!--            ></fragment>-->
+
+
+
+</RelativeLayout>
